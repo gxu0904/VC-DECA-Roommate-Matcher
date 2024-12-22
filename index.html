@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCDC 2025 Roommate Requests</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Validated Roommate Request Form</h1>
+    <form id="user-form">
+        <label for="n">Your Name:</label>
+        <input type="text" id="n" name="name" required>
+        <span id="name-feedback"></span>
+        <br><br>
+
+        <label for="roommate-count">Number of Roommates:</label>
+        <select id="roommate-count" name="roommate-count" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+
+        <div id="roommates-container"></div>
+
+        <div id="advisor-approval-container" style="display: none;">
+            <label>Advisor Approval Received:</label>
+            <input type="checkbox" id="advisor-approval" name="advisor-approval">
+        </div>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
